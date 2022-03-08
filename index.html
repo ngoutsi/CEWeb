@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,200;1,300;1,400&display=swap" rel="stylesheet"> 
+    <link href="Ressources/stylesheet.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Ressources/Slideshow/splide.min.css">
+    <script src="Ressources/Slideshow/splide.min.js"></script>
+    <title>Cercle d'Escrime de la Woluwe</title>
+</head>
+<body>
+    <header>
+        <img class="navlogo" src="Ressources/images/logoCEW_blanc.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#accueilintro">Accueil</a></li>
+                <li><a href="#slideshow">la Famille</a></li>
+                <li><a href="#sectionhoraire">Horaire</a></li>
+                <li><a href="#cotisation">Renseignements</a></li>
+                <li><a href="#contactform">Nous contacter</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button href="javascript:void(0)" class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#accueilintro">Accueil</a>
+                    <a href="#slideshow">la Famille</a>
+                    <a href="#sectionhoraire">Horaire</a>
+                    <a href="#cotisation">Renseignements</a>
+                    <a href="#contactform">Nous contacter</a>
+                </div>
+        </div>
+    </header>
+    <main>
+        <!--Premier viewport, page d'accueil-->
+        <section id="accueilintro" name="accueilintro">
+            <figure class="photoaccueil"><img src="Ressources/images/CarloFlouté.jpg" alt="photo d'escrimeur"></figure>
+        
+                <h1 class="titreaccueil">Bienvenu au Cercle d'Escrime de la Woluwe</h1>
+                <p class="introaccueil">
+                    Le cercle d'Escrime de la Woluwe est un club d'escrime familial 
+                    situé au coeur du Stade Fallon à Woluwe-Saint-Lambert. 
+                    De la découverte à la compétition, les élèves sont accompagnés tout le long de leur apprentissage.
+                </p>
+            
+            <div class="gradient"></div>
+
+            <article class="txtintro">
+                <h2> La méthode du club </h2>
+                <p> Le fleuret peut être pratiqué par les enfants, les adolescents et les adultes; 
+                    qu'ils soient débutants, déjà expérimentés, compétiteurs ou désireux de pratiquer un sport de loisir, le club propose des cours pour tout niveau. <br>
+                    Notre approche de l'escrime est inspirée de celle créée par le Maître italien Antonio Di Ciolo 
+                    dans son école d'escrime de Pise, cercle avec lequel le CEW est jumelé 
+                    et avec lequel nous avons des contacts réguliers.</p>
+                    <a href="reglement.html">Règlement du club d'escrime</a>
+                    <div class="images">
+                        <figure><img src="Ressources/images/diciolo-1.jpg"></figure>
+                        <figure class="diciolo2"><img src="Ressources/images/DiCiolo.jpg"></figure>
+                    </div>
+            </article>
+        </section>
+        <section id="slideshow" name="slideshow">
+                <h2>La famille du CEW</h2>
+                <div class="splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZTom.jpg"><h3>Tom</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZMurielleBis.jpg"><h3>Murielle</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZMariobis.jpg"><h3>Mario</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZMarialaura.jpg"><h3>Maria Laura</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZJJ.jpg"><h3>JJ</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZGuillaume.jpg"><h3>Guillaume</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZGeorgesbis.jpg"><h3>Georges</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZDavid.jpg"><h3>David</h3></li>
+                              <li class="splide__slide"><img src="Ressources/images/familleduCEW/davidHenquinet.jpg"><h3>David</h3></li>
+                              <!-- <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZMathieu.jpg"></li> -->
+                              <!-- <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZDavide.jpg"></li> -->
+                              <!-- <li class="splide__slide"><img src="Ressources/images/familleduCEW/ZZBernard.jpg"></li> -->
+                          </ul>
+                    </div>
+                  </div>
+                  <script>
+                    new Splide( '.splide' ).mount();
+                    document.addEventListener( 'DOMContentLoaded', function() {
+                    var splide = new Splide( '.splide', {
+                        type   : 'loop',
+                        autoplay: true,
+                        perPage: 3,
+                        perMove: 1,
+                        width  : '100%',
+                        height : '430px',
+                        cover  : true,
+                        gap    : '10px',
+                        pagination: 'false',
+                        breakpoints: {
+                                620: {
+                                    perPage: 1,
+                                },
+                        }
+                    } );
+                    splide.mount();
+                    } );
+                  </script>
+        </section>
+        <!--Troisième viewport avec l'horaire et le prix-->
+        <section id="sectionhoraire" name="sectionhoraire">
+                <h2 class="titrehoraire">Horaires de cours</h2>
+                <div class="grille">
+                    <table class="grillehoraire">
+                        <tbody>
+                            <tr>
+                                <th rowspan="3" >mardi</th>
+                                <td>18h à 19h</td>
+                                <td>jeunes de 8, 9, 10 et 11 ans</td>
+                            </tr>
+                            <tr>
+                                <td>19h à 20h30</td>
+                                <td>jeunes de 12, 13 et 14 ans</td>
+                            </tr>
+                            <tr>
+                                <td>20h à 21h30</td>
+                                <td>cadets, juniors et adultes</td>
+                            </tr>
+                            <tr>
+                                <th>Mercredi</th>
+                                <td>16h30 à 18h</td>
+                                <td>Tous âges pour les jeunes</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3" >Jeudi</th>
+                                <td>18h à 19h</td>
+                                <td>jeunes de 8, 9,10 et 11 ans</td>
+                            </tr>
+                            <tr>
+                                <td>19h à 20h30</td>
+                                <td>jeunes de 12, 13 et 14 ans</td>
+                            </tr>
+                            <tr>
+                                <td>20h à 21h30</td>
+                                <td>cadets, juniors et adultes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <video controls autoplay muted>
+                    <source src="Ressources/Vidéos/Vidéo.MOV" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> 
+        </section>
+        <section id="cotisation" name="cotisation">
+            <h2>Cotisation et licences</h2>
+            <div>
+                <p>
+                    Le montant de la cotisation pour la saison 2021-2022 est de <strong>345 €</strong> <br>
+                    <span class="parenthese">(réduction de 10 % pour les soeurs et frères)</span>
+                </p>
+                <p>
+                    La licence de la fédération francophone des cercles d'escrime est de <strong>45 €</strong> <br>
+                    <span class="parenthese">(non comprise dans la cotisation)</span>
+                </p>
+                <p class="total">Total pour la saison: <strong>390 €</strong></p>
+                <p>
+                    La cotisation pour un adulte parent d'un jeune membre du club est de <strong>200 €</strong><br>
+                    <span class="parenthese">(licence comprise)</span>
+                </p>
+            </div>
+            <figure><img src="Ressources/images/IMG_5795bis.jpg"></figure>
+        </section>
+        <section id="localisation" name="localisation">
+            <figure class="premap"><img src="Ressources/images/IMG_5778bis.jpg"></figure>
+            <h2>Nous trouver</h2>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.3817679693484!2d4.441487615447896!3d50.84261436691106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3db62ef6d8f15%3A0x7389381adb4c173f!2sChem.%20du%20Struykbeken%2C%201200%20Woluwe-Saint-Lambert!5e0!3m2!1sfr!2sbe!4v1643532887139!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <figure class="map"><img src="Ressources/images/localisation.png"></figure>
+        </section>
+        <section id="contactform" name="contactform">
+            <figure class="contactphoto"><img src="Ressources/images/IMG_1247.jpg"></figure>
+                <form action="https://formsubmit.co/woluwescrime@gmail.com" method="POST">
+                    <h2>Contactez-nous!</h2>
+                    <input type="hidden" name="_next" value="http://www.woluwescrime.be/merci.html">
+                    <label for="name">Mon nom: </label>
+                    <input type="text" name="name" placeholder="mon nom" required>
+                    <input type="hidden" name="_subject" value="nouveau mail pour le CEW">
+                    <label for="email">Mon adresse mail: </label>
+                    <input type="email" name="email" placeholder="mon adresse mail" required>
+                    <textarea name="message" required>mon message ici!</textarea>
+                    <button type="submit">Envoyer</button>
+            </form> 
+        </section>
+    </main>
+    <footer>
+        <h4>Liens Utiles</h4>
+        <ul>
+            <li><a href="https://www.cspdiciolo.it/">Club Scherma Pisa Antonio Di Ciolo</a></li>
+            <li><a href="https://fie.org/">Fédération internationale d'escrime</a></li>
+            <li><a href="https://ffceb.org/">Fédération francophone des cercles d'escrime de Belgique</a></li>
+            <li><a href="https://www.vlaamseschermbond.be/">Vlaamseschermbond</a></li>
+            <li><a href="https://www.nahouw.net/">Dates et détails des compétitions</a></li>
+            <li><a href="https://fie.org/">Règlement de la Fédération internationale d'escrime</a></li>
+            <li><a href="http://www.synec-doc.be/escrime/dico/antholog.htm">Petite anthologie d'escrime et nombreux documents en ligne</a></li>
+        </ul>
+        <aside>
+            <img src="Ressources/images/Logo_Francophones_Bruxelles.png" alt="logo de la COCOF"> 
+            <img src="Ressources/images/ZZLogo.jpg" alt="logo DiCiolo"> 
+            <p>La Commission communautaire francophone de la région de Bruxelles-Capitale soutient le CEW </p>
+        </aside>
+    </footer>
+</body>
+</html>
